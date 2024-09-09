@@ -9,7 +9,13 @@ document
         const bgColor = document.getElementById('card-bg-color').value;
         const borderColor = document.getElementById('card-border-color').value;
 
-        console.log({apellidos, nombre, username, avatarUrl, bgColor, borderColor});
+        console.log({
+            nombre, 
+            apellidos, 
+            username, 
+            avatarUrl, 
+            bgColor, 
+            borderColor});
 
         const cardContainer = document.getElementById('cards-container');
         const newCard = document.createElement('div');

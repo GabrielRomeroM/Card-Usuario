@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrate</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="cards">
+        <h2>Crea tu usuario</h2>
+        <div id="cards-form-container">
+            <h3>Nesecitamos unos datos</h3>
+            <form id="card-form">
+                <label for="card-last-name">Apelidos:</label>
+                <input type="text" id="card-last-name" name="card-last-name" required>
+                <br>
+                <label for="card-name">Nombres:</label>
+                <input type="text" id="card-name" name="card-name" required>
+                <br>
+                <label for="card-user">Nombres de tu usriario:</label>
+                <input type="text" id="card-user" value="" name="card-user" placeholder="Este nombre lo veran todos los jugadores" required>
+                <br>
+                <label for="card-email">Email:</label>
+                <input type="email" id="card-email" name="card-email" required>
+                <br>
+                <label for="card-image">Imagen del avatar:</label>
+                <input type="url" id="card-image" name="card-image" placeholder="https://avatar.iran.liara.run/public">
+                <br>
+                <h4>Personalizacion</h4>
+                <label for="card-bg-color">Color de fondo</label>
+                <input type="color" id="card-bg-color" name="card-bg-color" value="#ffffff">
+                <br>
+                <label for="card-border-color">Color del borde</label>
+                <input type="color" id="card-border-color" name="card-border-color" value="#000000">
+                <br>
+                <button type="submit">Ver perfil</button>
+            </form>
+            <div id="cards-container"></div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

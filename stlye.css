@@ -1,0 +1,9 @@
+.card {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    border-radius: 10px;
+}
+.card h3, .card p {
+    margin: 0;
+}

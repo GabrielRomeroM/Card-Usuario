@@ -9,8 +9,8 @@ document.getElementById('card-form').onsubmit = function (event) {
     const borderColor = document.getElementById('card-border-color').value;
 
     const cardHtml = `
-        <div class="card" style="background-color: ${bgColor}; border: 2px solid ${borderColor}; padding: 10px; margin-top: 20px;">
-            <img src="${avatarUrl}" alt="Avatar" style="border-radius: 50%; width: 50px; height: 50px; margin-right: 15px;">
+        <div class="card">
+            <img src="${avatarUrl}" alt="Avatar">
             <div>
                 <h3>${apellidos} ${nombre}</h3>
                 <p>@${username}</p>

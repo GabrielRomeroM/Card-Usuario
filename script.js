@@ -1,6 +1,5 @@
 document
-    .getElementById('card-form')
-        .addEventListener = ('submit', function (event){
+    .getElementById('card-form').onsubmit = function (event){
         event.preventDefault();
 
         const nombre = document.getElementById('card-name').value;
@@ -20,12 +19,12 @@ document
 
         newCard.innerHTML = `
             <img src="${avatarUrl}" alt="Avatar">
-            <div>
+            <div class="card-content">
                 <h3>${apellidos} ${nombre}</h3>
                 <p>@${username}</p>
             </div>
         `;
-    cardContainer.appendChild(newCard);
+        cardContainer.appendChild(newCard);
 
-    document.getElementById('card-form').reset();
-});
+        document.getElementById('card-form').reset();
+};

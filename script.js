@@ -10,6 +10,8 @@ document
         const bgColor = document.getElementById('card-bg-color').value;
         const borderColor = document.getElementById('card-border-color').value;
 
+        console.log({apellidos, nombre, username, avatarUrl, bgColor, borderColor});
+
         const cardContainer = document.getElementById('cards-container');
         const newCard = document.createElement('div');
         newCard.className = 'card';
@@ -17,14 +19,12 @@ document
         newCard.style.borderColor = borderColor;
 
         newCard.innerHTML = `
-            <div class="card">
             <img src="${avatarUrl}" alt="Avatar">
             <div>
                 <h3>${apellidos} ${nombre}</h3>
                 <p>@${username}</p>
             </div>
-        </div>
-    `;
+        `;
     cardContainer.appendChild(newCard);
 
     document.getElementById('card-form').reset();
